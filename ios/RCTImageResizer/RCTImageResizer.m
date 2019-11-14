@@ -127,7 +127,7 @@ RCT_EXPORT_METHOD(createResizedImage:(NSString *)path
         scale:1
         clipped:false
         resizeMode:RCTResizeModeCover
-        progressBlock:^nil
+        progressBlock:nil
         partialLoadBlock:nil
     completionBlock:^(NSError *error, UIImage *image) {
         if (error || image == nil) {
