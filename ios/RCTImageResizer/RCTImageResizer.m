@@ -127,12 +127,8 @@ RCT_EXPORT_METHOD(createResizedImage:(NSString *)path
         scale:1
         clipped:false
         resizeMode:RCTResizeModeCover
-        progressBlock:^(int64_t progress, int64_t total) {
-            
-        }
-        partialLoadBlock:^(UIImage *image) {
-            
-        }
+        progressBlock:^nil
+        partialLoadBlock:nil
     completionBlock:^(NSError *error, UIImage *image) {
         if (error || image == nil) {
             if ([path hasPrefix:@"data:"] || [path hasPrefix:@"file:"]) {
